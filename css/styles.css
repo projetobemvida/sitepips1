@@ -333,6 +333,7 @@ strong {
 
 .conceito-content {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: var(--spacing-lg);
     align-items: center;
@@ -466,6 +467,8 @@ strong {
 /* ===== COMO FUNCIONA SECTION ===== */
 .como-funciona {
     background-color: var(--blue);
+    display:flex;
+    flex-direction: column;
 }
 
 .timeline {
@@ -596,6 +599,7 @@ strong {
 
 .slider-controls {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: var(--spacing-md);
 }
