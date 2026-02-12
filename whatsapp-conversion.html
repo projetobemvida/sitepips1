@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZJC31TYZB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KZJC31TYZB');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecionando para WhatsApp - PIPS Pegue Monte</title>
@@ -268,7 +277,7 @@
                 clearInterval(timer);
                 // Redirect to WhatsApp
                 const phoneNumber = '5511963098096'; // Número do WhatsApp da PIPS Pegue Monte
-                const message = encodeURIComponent('Olá! Gostaria de solicitar um orçamento para decoração de festa. Vim através do site.');
+                const message = encodeURIComponent('Olá! Gostaria de um orçamento para minha celebração. O tema é [            ] e a data [            ].    ');
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
                 
                 fbq('track', 'Contact'); // <-- evento de conversão
