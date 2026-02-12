@@ -1,10 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+       
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIPS Pegue Monte - Decoração para Festas</title>
     <meta name="description" content="Kits pegue e monte para decoração de festas infantis e eventos. Praticidade e personalização ao seu alcance.">
+<link rel="icon" type="image/webp" href="images/favicon.webp">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "PartySupplyStore", "EventPlanner"],
+  "@id": "https://pipspeguemonte.com.br/#identity",
+  "name": "Pips Pegue e Monte Sua Festa – Retirada e Devolução",
+  "description": "Aluguel de Decoração de Festa em Barueri no formato Kit Pegue e Monte. Kits completos para aniversário infantil, adulto e eventos em Alphaville, Cajamar e região.",
+  "image": "https://pipspeguemonte.com.br/images/gif%20pips.webp",
+  "url": "https://pipspeguemonte.com.br/",
+  "telephone": "+55-11-96309-8096",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Sargento de Paula, 247 - Vila Sargento de Paula",
+    "addressLocality": "Barueri",
+    "addressRegion": "SP",
+    "postalCode": "06404-010",
+    "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -23.5042, 
+    "longitude": -46.8785
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "09:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Barueri"},
+    {"@type": "City", "name": "Alphaville"},
+    {"@type": "City", "name": "Cajamar"},
+    {"@type": "City", "name": "Santana de Parnaíba"},
+    {"@type": "City", "name": "Osasco"},
+    {"@type": "City", "name": "Jandira"}
+  ],
+  "sameAs": [
+    "https://www.instagram.com/pips.peguemonte/",
+    "https://www.facebook.com/profile.php?id=61577691561011",
+    "https://wa.me/5511963098096"
+  ]
+}
+</script>
     
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,29 +76,25 @@
     <!-- AOS - Animate on Scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    
-    <!-- CSS -->
+    <!-- CSS Otimizado -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
     
     <!-- Sistema de Cookies LGPD -->
     <link rel="stylesheet" href="css/cookies-lgpd.css">
 </head>
 <body>
-    <!-- Botão WhatsApp Flutuante -->
-    <a href="https://wa.me/5511963098096" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
+    <a href="whatsapp-conversion.html" class="whatsapp-float" target="_self" title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="PIPS Pegue Monte Logo" class="logo-img">
+                <img src="images/gif pips.webp" alt="PIPS Pegue Monte Logo" class="logo-img">
             </div>
             <nav class="main-nav">
-                <button class="menu-toggle">
+                <button class="menu-toggle" aria-label="Menu">
                     <i class="fas fa-bars"></i>
                 </button>
                 <ul class="nav-list">
@@ -52,19 +107,19 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section com Overlay Melhorado -->
     <section id="inicio" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 data-aos="fade-up">Transforme sua festa com nossos kits Pegue e Monte</h1>
-                <p data-aos="fade-up" data-aos-delay="100">Praticidade e personalização ao seu alcance para festas inesquecíveis</p>
-                <a href="#contato" class="btn btn-primary" data-aos="fade-up" data-aos-delay="200">Quero meu kit já!</a>
+                <h1 data-aos="fade-up">Melhor decoração Pegue e Monte de Barueri. </h1>
+                <p data-aos="fade-up" data-aos-delay="100">Decoração instagramável que você monta em minutos. Cabe no seu carro, no seu orçamento e no seu feed.</p>
+                <a href="#contato" class="btn btn-primary" data-aos="fade-up" data-aos-delay="200">Consultar disponibilidade em Barueri!</a>
             </div>
         </div>
         <div class="hero-overlay"></div>
         <style>
             .hero {
-                background-image: url('images/snoopy.webp');
+                background-image: url('images/hero.webp');
             }
         </style>
     </section>
@@ -76,21 +131,21 @@
             <div class="conceito-content">
                 <div class="conceito-text" data-aos="fade-right">
                     <p>O <strong>Pegue e Monte</strong> é um serviço que oferece kits completos de decoração para festas, permitindo que você mesmo monte uma decoração profissional sem complicações.</p>
-                    <p>Você escolhe o tema, personaliza os detalhes e recebe tudo pronto para montar, economizando tempo e dinheiro sem abrir mão da qualidade.</p>
+                    <p>Você escolhe o tema, personaliza os detalhes e recebe tudo pronto para montar, <strong>economizando tempo e dinheiro</strong> sem abrir mão da <strong>qualidade</strong>.</p>
                 </div>
                 <div class="conceito-steps" data-aos="fade-left">
                     <div class="step">
                         <div class="step-icon">
                             <i class="fas fa-palette"></i>
                         </div>
-                        <h3>Escolha</h3>
-                        <p>Selecione e garanta o tema perfeito para sua festa</p>
+                        <h3>Escolha seu tema preferido</h3>
+                        <p>Selecione o tema perfeito para sua festa. Um contrato simples garante sua reserva. O pagamento será feito na retirada do kit.</p>
                     </div>
                     <div class="step">
                         <div class="step-icon">
                             <i class="fas fa-box-open"></i>
                         </div>
-                        <h3>Agende a Retirada do Kit</h3>
+                        <h3>Agende a Retirada</h3>
                         <p>Retire o kit completo e organizado. Estamos no Centro de Barueri - SP</p>
                     </div>
                     <div class="step">
@@ -98,101 +153,101 @@
                             <i class="fas fa-magic"></i>
                         </div>
                         <h3>Monte</h3>
-                        <p>Monte facilmente seguindo nossas instruções</p>
+                        <p>Monte facilmente seguindo nossas instruções. Prestamos suporte via whatsapp.</p>
                     </div>
                     <div class="step">
                         <div class="step-icon">
                             <i class="fas fa-heart"></i>
                         </div>
                         <h3>Celebre</h3>
-                        <p>Aproveite sua festa com tranquilidade</p>
+                        <p>Aproveite sua festa com tranquilidade e aproveite um ambiente super instagramável para registrar suas memórias!</p>
                     </div>
-                     <div class="step">
+                    <div class="step">
                         <div class="step-icon">
-                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-undo-alt"></i>
                         </div>
                         <h3>Faça a Entrega</h3>
-                        <p>Período de até TRÊS dias úteis após sua festa. Modo locação.</p>
+                        <p>Período de até <strong>TRÊS dias úteis após sua festa.</strong> </p>
                     </div>
-                
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Kits Populares Section -->
+    <!-- Kits Populares Section com Padronização -->
     <section id="temas" class="kits-populares">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Nossos Temas Mais Populares</h2>
-            <div class="swiper-container kits-swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="kit-card" data-aos="fade-up">
-                            <div class="kit-image">
-                                <img src="images/stitch.webp" alt="Kit Mais Buscados">
-                            </div>
-                            <div class="kit-info">
-                                <h3>Kits Temáticos</h3>
-                                <p>Aqui você encontra o seu tema preferido! Consulte e faça sua escolha!</p>
-                            </div>
-                        </div>
+            <h2 class="section-title" data-aos="fade-up">Nossos Temas Mais Procurados</h2>
+            <div class="kits-grid">
+                <div class="kit-card" data-aos="fade-up">
+                    <div class="kit-image">
+                        <img src="images/pool-party.webp" alt="Kit Mais Buscados">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="kit-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="kit-image">
-                                <img src="images/junina.webp" alt="Kit junina">
-                            </div>
-                            <div class="kit-info">
-                                <h3>Kit Festas de Época</h3>
-                                <p>Decoração encantada para Natal, Festas Juninas , Ano Novo e mais!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="kit-card" data-aos="fade-up" data-aos-delay="200">
-                            <div class="kit-image">
-                                <img src="images/azulrosa.webp" alt="Kit Super Heróis">
-                            </div>
-                            <div class="kit-info">
-                                <h3>Kit Aniversário Infantil</h3>
-                                <p>Decoração personalizada para uma festa inesquecível</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="kit-card" data-aos="fade-up" data-aos-delay="300">
-                            <div class="kit-image">
-                                <img src="images/casanova.webp" alt="Kit Unicórnio">
-                            </div>
-                            <div class="kit-info">
-                                <h3>Personalize seu Momento</h3>
-                                <p>Magia e cores para uma celebrar eventos com os amigos!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="kit-card" data-aos="fade-up" data-aos-delay="400">
-                            <div class="kit-image">
-                                <iframe 
-                                    width="100%" 
-                                    height="315" 
-                                    src="https://www.youtube.com/embed/TwDD1BnEb1c" 
-                                    title="YouTube video player" 
-                                    frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
-                            <div class="kit-info">
-                                <h3>Tutorial de Montagem!</h3>
-                                <p>Veja como é prático e rápido montar sua festa!</p>
-                            </div>
-                        </div>
+                    <div class="kit-info">
+                        <h3>Kits Mais procurados</h3>
+                        <p>De Pool Party, Capivara ou Wandinha aqui você encontra o seu tema preferido! Consulte e faça sua escolha!</p>
                     </div>
                 </div>
-                <div class="swiper-pagination kits-swiper-pagination"></div>
-                <div class="swiper-button-prev kits-swiper-button-prev"></div>
-                <div class="swiper-button-next kits-swiper-button-next"></div>
+                <div class="kit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="kit-image">
+                        <img src="images/junina.webp" alt="Kit Festas de Época">
+                    </div>
+                    <div class="kit-info">
+                        <h3>Kit Festas de Época</h3>
+                        <p>Decoração encantada para Natal, Festas Juninas, Ano Novo e mais!</p>
+                    </div>
+                </div>
+                <div class="kit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="kit-image">
+                        <img src="images/snoopy.webp" alt="Kit Aniversário Infantil">
+                    </div>
+                    <div class="kit-info">
+                        <h3>Kit Aniversário Infantil</h3>
+                        <p>Desde o chá revelação a celebração do New Born, batizado, passando pela primeira volta em torno do sol, Safari ou Floresta Encantada. Temos Kits Higienizados para Mamães exigentes.</p>
+                    </div>
+                </div>
+                <div class="kit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="kit-image">
+                        <img src="images/decoracao_cha_de_cozinha_boho_chic_adulto_pips_pegue_monte_barueri_alphaville_bethaville_cajamar_aldeia_da_serra.webp" alt="Momentos de Conquista">
+                    </div>
+                    <div class="kit-info">
+                        <h3>Aniversários Adulto e Celebrações</h3>
+                        <p>Do Aniversário cheio de Energia ao  Chá de Cozinha, Open House, Casamento Minimalista  e Bodas. Celebre com qualidade e segurança.</p>
+                    </div>
+                </div>
+                 <div class="kit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="kit-image">
+                        <iframe 
+                            width="100%" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/TwDD1BnEb1c" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="kit-info">
+                        <h3>Tutorial de Montagem!</h3>
+                        <p>Veja como é prático e rápido montar sua festa!</p>
+                    </div>
+                </div><div class="kit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="kit-image">
+                        <iframe 
+                            width="100%" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/0sdsEZ3lff4" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="kit-info">
+                        <h3>Kits pensados para caber no seu carro!</h3>
+                        <p>Seu kit e arco de balões viajam com toda segurança!</p>
+                    </div>
+                </div>
             </div>
             <div class="center-btn" data-aos="fade-up">
                 <a href="#contato" class="btn btn-primary">Saiba Mais! Entre em Contato!</a>
@@ -209,7 +264,7 @@
                     <div class="timeline-number">1</div>
                     <div class="timeline-content">
                         <h3>Escolha seu tema</h3>
-                        <p>Navegue por nossa galeria de temas aqui ou no Instagram. Entre em contato e nos conte sua ideia personalizada.</p>
+                        <p>Navegue por nossa galeria de temas aqui ou no Instagram. Entre em contato e conte sua ideia personalizada.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-aos="fade-left">
@@ -244,20 +299,32 @@
         </div>
     </section>
 
-    <!-- Depoimentos Section -->
+    <!-- Avaliações Section com Widget Visual -->
     <section id="avaliacoes" style="text-align: center; padding: 40px 0;">
- 
-  <a href="http://bit.ly/40c9Gwt" 
-     target="_blank" 
-     rel="noopener" 
-     style="display: inline-block; padding: 15px 30px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: transform 0.2s; margin-bottom: 20px;">
-    Ver Avaliações no Google
-  </a>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Avaliações de Clientes</h2>
+            
+            <!-- Widget de Estrelas -->
+            <div class="rating-stars" data-aos="fade-up">
+                <span class="star"><i class="fas fa-star"></i></span>
+                <span class="star"><i class="fas fa-star"></i></span>
+                <span class="star"><i class="fas fa-star"></i></span>
+                <span class="star"><i class="fas fa-star"></i></span>
+                <span class="star"><i class="fas fa-star"></i></span>
+                <span class="rating-text">5.0 - Excelente</span>
+            </div>
 
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-f65815b0-88d4-4e7b-b820-54bf4193c944" data-elfsight-app-lazy></div>
-  </a>
-</section>
+            <p data-aos="fade-up" data-aos-delay="100" style="margin-bottom: 20px;">
+                <a href="http://bit.ly/40c9Gwt" target="_blank" rel="noopener" style="display: inline-block; padding: 12px 24px; background-color: #4285F4; color: white; font-size: 16px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                    Ver Avaliações no Google
+                </a>
+            </p>
+            
+            <!-- Elfsight Google Reviews -->
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-f65815b0-88d4-4e7b-b820-54bf4193c944" data-elfsight-app-lazy></div>
+        </div>
+    </section>
 
     <!-- Contato Section -->
     <section id="contato" class="contato">
@@ -269,40 +336,18 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h3>Endereço</h3>
-                            <footer>
-  <div style="text-align: center; padding: 20px; background-color: #f1f1f1;">
-    <h4>Nosso Endereço</h4>
-    <p id="endereco">Rua Sargento José de Paula, 247 - Barueri, SP</p>
-    <button onclick="copiarEndereco()">Copiar Endereço</button>
-
-    <div style="margin-top: 20px;">
-      <iframe
-        src="https://www.google.com/maps?q=Rua+Sargento+Jos%C3%A9+de+Paula,+247,+Barueri,+SP&output=embed"
-        width="100%"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </div>
-
-  <script>
-    function copiarEndereco() {
-      const texto = document.getElementById('endereco').innerText;
-      navigator.clipboard.writeText(texto).then(function() {
-        alert("Endereço copiado com sucesso!");
-      }, function(err) {
-        alert("Erro ao copiar o endereço.");
-      });
-    }
-  </script>
-</footer>
-
-                            
-                        
+                            <p>Rua Sargento José de Paula, 247 - Barueri, SP</p>
+                            <button onclick="copiarEndereco()" style="margin-top: 10px; padding: 8px 16px; background-color: #ff9f43; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;">
+                                Copiar Endereço
+                            </button>
                         </div>
+                        
+                    </div>
+                    <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.668958462136!2d-46.871927!3d-23.508430399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf03a85dfac5d3%3A0xc0bacafe3a2e776a!2sPips%20Pegue%20e%20Monte%20Sua%20Festa%20%E2%80%93%20Retirada%20e%20Devolu%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1769376761626!5m2!1spt-BR!2sbr" width="80%" height="60%" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        </div>
+                                 
                     </div>
                     <div class="contato-item">
                         <i class="fas fa-phone-alt"></i>
@@ -312,22 +357,33 @@
                         </div>
                                 
                         </div>
-                    </div>
                     <div class="contato-item">
                         <i class="fas fa-clock"></i>
                         <div>
                             <h3>Horário de Atendimento</h3>
                             <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
                         </div>
+                       </div>
+                    </div> 
+                    <div>
+                            <p>A Pips Pegue Monte está localizada estrategicamente no Centro de Barueri,<br>
+                                facilitando a retirada para clientes de toda a região.<br>
+                                Atendemos com facilidade os bairros de Alphaville, Tamboré,<br>
+                                Aldeia da Serra, Bethaville e Engenho Novo.<br>
+                                Também somos o ponto de apoio ideal para clientes<br>
+                                de cidades vizinhas como Carapicuíba, Santana de Parnaíba,<br>
+                                Jandira e Itapevi que buscam praticidade e qualidade na decoração de suas festas.
+                            </p>
                     </div>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/pips.peguemonte/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/people/Pips-Pegue-e-Monte-sua-festa/61577691561011/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/5511963098096" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Pips-Pegue-e-Monte-sua-festa/61577691561011/" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        
+<i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 
-                </div>
+                
             </div>
         </div>
     </section>
@@ -337,72 +393,53 @@
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Siga-nos no Instagram</h2>
             <p class="section-subtitle" data-aos="fade-up">@pips.peguemonte</p>
-            <div class="swiper-container instagram-swiper-container" data-aos="fade-up">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" class="insta-item">
-                            <img src="images/chapeuzinho.webp" alt="Instagram Post">
-                            <div class="insta-overlay">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                        </a>
+            <div class="instagram-grid" data-aos="fade-up">
+                <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" rel="noopener" class="insta-item">
+                    <img src="images/chapeuzinho.webp" alt="Instagram Post - Chapéuzinho Vermelho">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" class="insta-item">
-                            <img src="images/stitch.webp" alt="Instagram Post">
-                            <div class="insta-overlay">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                        </a>
+                </a>
+                <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" rel="noopener" class="insta-item">
+                    <img src="images/decoracao_aniversario_adulto_pips_pegue_monte_barueri_alphaville_bethaville_cajamar_aldeia_da_serra.webp" alt="Instagram Post - Stitch">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" class="insta-item">
-                            <img src="images/junina.webp" alt="Instagram Post">
-                            <div class="insta-overlay">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                        </a>
+                </a>
+                <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" rel="noopener" class="insta-item">
+                    <img src="images/chabebeazul.webp" alt="Instagram Post - Cha de bebe">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" class="insta-item">
-                            <img src="images/prateado.webp" alt="Instagram Post">
-                            <div class="insta-overlay">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                        </a>
+                </a>
+                <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" rel="noopener" class="insta-item">
+                    <img src="images/bodas_de_ouro_cajamar_polvilho_jordanesia_alphaville_bethaville_pips.webp" alt="Instagram Post - Prateado">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" class="insta-item">
-                            <img src="images/futebol.webp" alt="Instagram Post">
-                            <div class="insta-overlay">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                        </a>
+                </a>
+                <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" rel="noopener" class="insta-item">
+                    <img src="images/futebol.webp" alt="Instagram Post - Futebol">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" class="insta-item">
-                            <img src="images/pool-party.webp" alt="Instagram Post">
-                            <div class="insta-overlay">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                        </a>
+                </a>
+                <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" rel="noopener" class="insta-item">
+                    <img src="images/aniversario-cajamar-alphaville-bethaville-grennvilee-barueri-pips-pegue-monte1.webp" alt="Instagram Post - Pool Party">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
                     </div>
-                </div>
-                <div class="swiper-pagination instagram-swiper-pagination"></div>
-                <div class="swiper-button-prev instagram-swiper-button-prev"></div>
-                <div class="swiper-button-next instagram-swiper-button-next"></div>
+                </a>
             </div>
         </div>
     </section>
-
-   
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="images/logo.png" alt="PIPS Pegue Monte">
+                    <img src="images/pips agradecimento.gif" alt="PIPS Pegue Monte">
                     <p>Transformando momentos em memórias inesquecíveis</p>
                 </div>
                 <div class="footer-links">
@@ -414,69 +451,37 @@
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
-                </div>
+            </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 PIPS Pegue Monte. Todos os direitos reservados. PROJETADO E PROGRAMADO POR rodrigosilvatrafego@gmail.com
-</p>
+                <p>&copy; 2025 PIPS Pegue Monte. Todos os direitos reservados. Desenvolvido por @rodrigoaugustofarol .</p>
                 <div class="footer-social">
-                    <a href="https://www.instagram.com/pips.peguemonte/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/pips.peguemonte/" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/people/Pips-Pegue-e-Monte-sua-festa/61577691561011/" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="whatsapp-conversion.html" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Modal de Galeria -->
-    <div class="gallery-modal">
-        <span class="close-modal">&times;</span>
-        <img class="modal-content" id="modal-img">
-        <div class="modal-caption"></div>
-        <a class="modal-prev">&#10094;</a>
-        <a class="modal-next">&#10095;</a>
-    </div>
-
-    <!-- Scripts -->
+    <!-- AOS Script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/script.js"></script>
     
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/swiper-config.js"></script>
+    <!-- Scripts -->
+    <script src="js/script-optimized.js"></script>
+    
+    <!-- Script de Cópia de Endereço -->
+    <script>
+        function copiarEndereco() {
+            const texto = "Rua Sargento José de Paula, 247 - Barueri, SP";
+            navigator.clipboard.writeText(texto).then(function() {
+                alert("Endereço copiado com sucesso!");
+            }, function(err) {
+                alert("Erro ao copiar o endereço.");
+            });
+        }
+    </script>
     
     <!-- Sistema de Cookies LGPD -->
     <script src="js/cookies-lgpd.js"></script>
-
-    <!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '9861765200617530'); 
-  fbq('track', 'PageView');
-</script>
-<noscript>
-  <img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=9861765200617530&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Intercepta cliques em links do WhatsApp
-        const whatsappLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]');
-        
-        whatsappLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                window.location.href = 'whatsapp-conversion.html';
-            });
-        });
-    });
-</script>
-
 </body>
 </html>
